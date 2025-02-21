@@ -1,0 +1,27 @@
+/* ? */
+._user-name {     /*valied*/
+}
+
+/* ? */
+.-user-name {  /*valied*/
+}
+
+/* ? */
+.1user-name {  /*not  valied*/
+}
+
+/* ? */
+.@user-name {
+}             /*not  valied*/
+
+/* ? */
+.user@name {
+}            /*not  valied*/
+
+/* ? */
+._user10name {   /*valied*/
+}
+
+/* ? */
+.u {         /*valied*/
+}

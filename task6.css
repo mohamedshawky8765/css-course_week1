@@ -1,0 +1,19 @@
+/* ? */
+.USERNAME {  /* bad*/
+}
+
+/* ? */
+.UserName {  /*good*/
+}
+
+/* ? */
+.user-name {
+}           /*good*/
+
+/* ? */
+.userName { /*good*/
+}
+
+/* ? */
+.usernameprofile { /* bad*/
+}
