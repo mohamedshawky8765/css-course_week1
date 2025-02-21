@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .assign-2-shape-1,
+        .assign-2-shape-2,
+        .assign-2-shape-3,
+        .assign-2-shape-4 {
+            width: 400px;
+            height: 400px;
+            background-color: #eee;
+            position: relative;
+            margin: 20px;
+
+        }
+
+        .assign-2-shape-1::before {
+            content: "";
+            width: 80%;
+            height: 80%;
+            background-image: url("https://elzero.org/wp-content/uploads/2021/02/css-assignment-5-8.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            background-size: cover;
+        }
+
+
+        .assign-2-shape-2::before {
+            content: "";
+            width: 80%;
+            height: 100%;
+            background-image: url("https://elzero.org/wp-content/uploads/2021/02/css-assignment-5-8.png");
+            position: absolute;
+            right: 0;
+            background-size: cover;
+            background-repeat: repeat-y;
+        }
+
+        .assign-2-shape-3 ::before {
+            content: "";
+            width: 100%;
+            height: 80%;
+            background-image: url("https://elzero.org/wp-content/uploads/2021/02/css-assignment-5-8.png");
+            position: absolute;
+            bottom: 0;
+            background-size: cover;
+            background-repeat: repeat-x;
+        }
+
+        .assign-2-shape-4 ::before {
+            content: "";
+            width: 50%;
+            height: 50%;
+            background-image: url("https://elzero.org/wp-content/uploads/2021/02/css-assignment-5-8.png");
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            background-repeat: repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="assign-2-shape-1">Normal Div</div>
+    <div class="assign-2-shape-2">Normal Div</div>
+    <div class="assign-2-shape-3">Normal Div</div>
+    <div class="assign-2-shape-4">Normal Div</div>
+
+</body>
+
+</html>
