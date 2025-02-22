@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: #eee;
+            font-size: 30px;
+            white-space: 70px;
+            margin: 90px auto;
+            width: 60%;
+            position: relative;
+            border: 3px red solid;
+            padding: 20px;
+        }
+
+        .top-left,
+        .bottom-left,
+        .top-right,
+        .bottom-right {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(112, 80, 250);
+            text-align: center;
+
+        }
+
+        .top-left {
+            left: -20px;
+            top: -20px;
+            border-right: red 3px solid;
+        }
+
+        .top-right {
+            right: -20px;
+            top: -20px;
+            border-left: red 3px solid;
+        }
+
+        .bottom-left {
+            left: -20px;
+            bottom: -20px;
+            border-right: red 3px solid;
+        }
+
+        .bottom-right {
+            bottom: -20px;
+            right: -20px;
+            border-left: red 3px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, sed. Ea ipsum
+        similique quasi rem, fugiat voluptatibus reiciendis nam debitis earum quo veniam
+        laudantium mollitia atque! Laborum ea nam doloribus.
+        <span class="top-left">1</span>
+        <span class="bottom-left">2</span>
+        <span class="top-right">3</span>
+        <span class="bottom-right">4</span>
+    </div>
+
+</body>
+
+</html>
