@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            background-color: #eee;
+            width: 70%;
+            margin: 50px auto;
+
+        }
+
+        ol {
+            padding: 10px;
+            background-color: white;
+            list-style-position: outside;
+            list-style-type: lower-roman;
+        }
+
+        li {
+            padding: 1px;
+            width: 95%;
+            margin: 10px auto;
+        }
+
+        ul li ul {
+            background-color: white;
+            list-style-position: inside;
+        }
+
+        ul li ul li {
+            padding: 1px;
+            width: 95%;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            HTML
+            <ol>
+                <li>Slim</li>
+                <li>Pugjs</li>
+                <li>HAML</li>
+            </ol>
+        </li>
+        <li>
+            CSS
+            <ol>
+                <li>SASS</li>
+                <li>LESS</li>
+                <li>PostCSS</li>
+            </ol>
+        </li>
+        <li>
+            JavaScript
+            <ul>
+                <li>Vuejs</li>
+                <li>Sveltejs</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
