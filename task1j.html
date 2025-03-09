@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+            border: solid black 2px;
+            border-radius: 50%;
+            margin: 70px;
+            padding: 100px;
+            box-shadow: 15px 15px rgba(0, 0, 255, 0.744),
+                -15px -15px rgba(255, 0, 0, 0.677);
+            position: relative;
+            counter-increment: count;
+
+        }
+
+        div::before {
+            content: counter(count);
+            position: absolute;
+            top: 5px;
+            left: 140px;
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border: black 2px solid;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>element</h1>
+    </div>
+    <div>
+        <h1>element</h1>
+    </div>
+    <div>
+        <h1>element</h1>
+    </div>
+</body>
+
+</html>
