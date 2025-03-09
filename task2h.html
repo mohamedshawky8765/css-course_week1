@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .before{
-            margin:10px auto;
-            background-color:#eee;
-            width:200px;
-            height:40px;
-            position:relative;
-            text-align:center;
+        div {
+            width: 300px;
+            height: 60px;
+            background-color: #eee;
+            position: relative;
+            text-align: center;
+            margin: 20px auto;
         }
-        .before::before{
-            content:"1";
-            position:absolute;
-            width:20px;
-            height:20px;
-            text-align:center;
-            left:-10px;
-            top:5px;
-            background-color:red;
+
+        div::after {
+            content: "1";
+            position: absolute;
+            background-color: red;
+            width: 40px;
+            height: 50px;
+            top: 5px;
+            left: -20px;
         }
     </style>
 </head>
+
 <body>
-    <div class="before">
-         Hello, Welcome To Elzero Web School
-    </div>
-    
+    <div>
+        Hello, Welcome To Elzero Web School</div>
 </body>
+
 </html>
