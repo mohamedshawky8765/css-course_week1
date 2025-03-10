@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            position: relative;
+            width: 1080px;
+            height: 500px;
+            margin: 20px auto;
+        }
+
+        .first {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            padding: 100px;
+            background-color: #b8b3b387;
+            left: 75px;
+            top: 100px;
+            text-align: center;
+            border: 2px black solid;
+            border-radius: 50%;
+        }
+
+        .thaird {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            padding: 100px;
+            background-color: #b8b3b387;
+            right: 75px;
+            top: 100px;
+            text-align: center;
+            border: 2px black solid;
+            border-radius: 50%;
+        }
+
+        .secound {
+            position: absolute;
+            width: 6px;
+            height: 500px;
+            background-color: rgb(38, 145, 253);
+            left: 537px;
+        }
+
+        .secound::after {
+            content: "or";
+            width: 30px;
+            height: 30px;
+            background-color: rgb(38, 145, 253);
+            position: absolute;
+            left: -12px;
+            top: 230px;
+            text-align: center;
+            border: transparent solid 2px;
+            border-radius: 50%;
+        }
+
+        .parent2 {
+            position: absolute;
+            background-color: #eee;
+            width: 500px;
+            height: 500px;
+            left: 0px;
+            top: 0px;
+        }
+
+        .parent3 {
+            position: absolute;
+            background-color: #eee;
+            width: 500px;
+            height: 500px;
+            top: 0px;
+            right: 0px;
+        }
+
+        .first::before {
+            content: "basic";
+            width: 400px;
+            height: 50px;
+            position: absolute;
+            background-color: rgb(38, 145, 253);
+            left: -10px;
+            top: -70px;
+            border: transparent solid 2px;
+            border-radius: 10px;
+        }
+
+        .thaird::before {
+            content: "basic";
+            width: 400px;
+            height: 50px;
+            position: absolute;
+            background-color: rgb(38, 145, 253);
+            right: -10px;
+            top: -70px;
+            border: transparent solid 2px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="parent2">
+            <div class="first">
+                <h1>free</h1>
+            </div>
+        </div>
+        <div class="secound"></div>
+        <div class="parent3">
+            <div class="thaird">
+                <h1>$80</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
